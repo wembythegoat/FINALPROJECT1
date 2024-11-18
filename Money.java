@@ -1,5 +1,5 @@
 /**
- This class represents nonnegative amounts of money.
+ * This class represents nonnegative amounts of money.
  */
 public class Money {
     // The number of dollars
@@ -26,13 +26,12 @@ public class Money {
 
     // ADD LINES FOR TASK #1 HERE
     // Document and write a copy constructor
-    private double Money;
 
     public Money(Money otherObject) {
-
-        this.Money = otherObject.Money;
-
+        this.dollars = otherObject.dollars;
+        this.cents = otherObject.cents;
     }
+
 
     /**
      * The add method
@@ -98,15 +97,17 @@ public class Money {
             value = 0;
         return value;
     }
+
     // ADD LINES FOR TASK #2 HERE
     // Document and write an equals method
     public boolean equals(Money otherObject) {
 
-        return this.Money == otherObject.Money;
+        return this.dollars == otherObject.dollars && this.dollars == otherObject.cents;
 
     }
+
     // Document and write a toString method
     public String toString() {
-        return (dollars + ", " + cents);
+        return String.format("$%d.%02d", dollars, cents);
     }
 }
