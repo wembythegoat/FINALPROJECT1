@@ -1,3 +1,9 @@
+/**
+ * This class stimulates a credit card
+ *
+ * @author Aswinth Sinnathamby
+ * @version 1.0
+ */
 public class CreditCard {
     //Instance variables
     private Money balance;
