@@ -1,10 +1,8 @@
 /**
- This program demonstrates the Money class.
+ * This program demonstrates the Money class.
  */
-public class MoneyDemo
-{
-    public static void main(String[] args)
-    {
+public class MoneyDemo {
+    public static void main(String[] args) {
 // Named constants
         final int BEGINNING = 500; // Beginning balance
         final Money FIRST_AMOUNT = new Money(10.02);
@@ -30,14 +28,11 @@ public class MoneyDemo
 // the first amount and store the result.
         boolean equal = SECOND_AMOUNT.equals(FIRST_AMOUNT);
 // Display the result.
-        if(equal)
-        {
+        if (equal) {
 // The first and second amounts are equal.
             System.out.println(SECOND_AMOUNT + " equals " +
                     FIRST_AMOUNT);
-        }
-        else
-        {
+        } else {
 // The first and second amounts are not equal.
             System.out.println(SECOND_AMOUNT +
                     " does not equal " +
@@ -47,14 +42,11 @@ public class MoneyDemo
 // the first amount and store the result.
         equal = THIRD_AMOUNT.equals(FIRST_AMOUNT);
 // Display the result.
-        if(equal)
-        {
+        if (equal) {
 // The third and first amounts are equal.
             System.out.println(THIRD_AMOUNT + " equals " +
                     FIRST_AMOUNT);
-        }
-        else
-        {
+        } else {
 // The third and first amounts are not equal.
             System.out.println(THIRD_AMOUNT +
                     " does not equal " +
